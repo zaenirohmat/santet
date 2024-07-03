@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santet Online v2</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Alat Santet</h2>
+        <form action="process_form.php" method="post">
+            <label for="nama_korban">Nama Korban:</label>
+            <input type="text" id="nama_korban" name="nama_korban" required>
+
+            <label for="tanggal_lahir_korban">Tanggal Lahir Korban:</label>
+            <input type="date" id="tanggal_lahir_korban" name="tanggal_lahir_korban" required>
+
+            <label for="muatan_santet">Muatan Santet:</label>
+            <select id="muatan_santet" name="muatan_santet" required>
+                <option value="">--Pilih Muatan Santet--</option>
+                <option value="semut">Semut</option>
+                <option value="klereng">Klereng</option>
+                <option value="pisau">Pisau</option>
+                <option value="piring">Piring</option>
+                <option value="ayam">Ayam</option>
+                <option value="nasgor">Nasgor</option>
+                <option value="keris">Keris</option>
+                <option value="api">Api</option>
+                <option value="air">Air</option>
+                <option value="batu">Batu</option>
+            </select>
+
+            <button type="submit">Kirim Santet</button>
+        </form>
+    </div>
+</body>
+</html>
